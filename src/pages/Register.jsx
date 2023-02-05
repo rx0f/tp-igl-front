@@ -8,7 +8,7 @@ export default function Register() {
   const userId = localStorage.getItem("user");
 
   if (!userId) return <Navigate to="/" replace />;
-  
+
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
   const [telephone, setTelephone] = useState(0);
@@ -19,7 +19,7 @@ export default function Register() {
     api
       .get(`/user/${userId}`)
       .then((res) => setDefaultInfo(res.data.data))
-      .catch((err) => console.log(err));
+      .catch(() => {});
   }, []);
 
   const submit = (event) => {
@@ -36,11 +36,11 @@ export default function Register() {
           navigate("/");
         } else alert("There was an error");
       })
-      .catch((err) => console.log(err));
+      .catch(() => alert("There was an error"));
   };
 
   return (
-    <section className="section-layout w-full">
+    <section className="section-layout w-full flex flex-col h-screen">
       <form onSubmit={submit} className="space-y-4 w-96 mx-auto">
         <h1 className="title-sm flex justify-center">Enter your information</h1>
         <Input

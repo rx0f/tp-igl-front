@@ -11,7 +11,7 @@ export default function Logout() {
         localStorage.removeItem("confirmed");
         window.location.reload(false);
       })
-      .catch((err) => console.log(err));
+      .catch(() => {});
   };
 
   return (

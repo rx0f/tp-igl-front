@@ -12,7 +12,7 @@ export default function Hero() {
       <img
         src=" https://res.klook.com/image/upload/c_fill,w_720,h_500,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/ctkjmd3fsgssxztsu5aq.webp"
         alt="Building"
-        className="col-span-1 order-first md:order-last my-auto rounded-xl m-8"
+        className="col-span-1 order-first md:order-last my-auto rounded-xl"
       />
     </section>
   );

@@ -16,7 +16,7 @@ export default function SingleElement() {
         setOffer(res.data.data.annonce);
         setContact(res.data.data.contact);
       })
-      .catch((err) => console.log(err));
+      .catch(() => {});
   }, []);
 
   return (

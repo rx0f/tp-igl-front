@@ -12,7 +12,7 @@ module.exports = {
         hover: "#5C1193",
       },
       fontFamily: {
-        Merriweather: ["Merriweather", "serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
       },
       spacing: {
         112: "28rem",

@@ -15,12 +15,12 @@ export default function HomePageAfter() {
     api
       .get("/annonces")
       .then((res) => setAnnonces(res.data.data))
-      .catch((err) => console.log(err));
+      .catch(() => {});
 
     api
       .get(`user/${id}/annonces`)
       .then((res) => setUserAnnonces(res.data.data))
-      .catch((err) => console.log(err));
+      .catch(() => {});
   };
 
   useEffect(() => {

@@ -19,7 +19,7 @@ export default function Before() {
           localStorage.setItem("confirmed", 0);
         window.location.reload(false);
       })
-      .catch((err) => console.log(err));
+      .catch(() => {});
   };
 
   useEffect(() => {

@@ -4,7 +4,6 @@ export default function ProtectedRoute({ children }) {
   const connected = localStorage.getItem("user") ? true : false;
   const confirmed = parseInt(localStorage.getItem("confirmed"));
 
-  console.log(connected)
   if (!connected) return <Navigate to="/" replace/>;
   if (confirmed === 0) return <Navigate to="/resgiter" replace/>;
 

@@ -6,7 +6,6 @@ import TextArea from "../shared/TextArea";
 import { api } from "../../utils/api";
 
 export default function AddAnnonce({ getAnnonces }) {
-  const [visible, setVisible] = useState(false);
   const [titre, setTitre] = useState("");
   const [surface, setSurface] = useState(0);
   const [description, setDescription] = useState("");
@@ -35,12 +34,15 @@ export default function AddAnnonce({ getAnnonces }) {
 
     api
       .post(`/user/${id}/depot_annonce`, annonce)
-      .then(() => getAnnonces())
-      .catch((err) => console.log(err));
+      .then(() => {
+        getAnnonces();
+        alert("Offer added succesfully");
+      })
+      .catch(() => alert("Error while adding offer"));
   };
 
   return (
-    <section className="section-layout bg-white-blue">
+    <section className="section-layout">
       <div className="flex flex-col items-center gap-y-4">
         <h2 className="title-lg">Add offer</h2>
         <p className="title-description">

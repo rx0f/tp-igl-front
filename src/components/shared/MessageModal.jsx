@@ -27,10 +27,11 @@ export default function MessageModal({ visible, setVisible, userId }) {
         sender_id: senderId,
         content,
       })
-      .then((res) => {
-        console.log(res);
+      .then(() => {
+        alert("Message sent successfully");
+        setVisible(false);
       })
-      .catch((err) => console.log(err));
+      .catch(() => alert("Error while sending message"));
   };
 
   return (

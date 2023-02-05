@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,7 +14,7 @@
   .title-xl,
   .title-lg,
   .title-sm {
-    @apply font-Merriweather font-bold text-dark-blue;
+    @apply font-Montserrat font-bold text-dark-blue;
   }
 
   .title-xl {

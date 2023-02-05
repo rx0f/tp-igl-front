@@ -10,9 +10,7 @@ export default function MyMessages() {
     api
       .get(`/user/${id}/messages`)
       .then((res) => setMessages(res.data.data))
-      .catch((err) => console.log(err));
-
-    console.log(messages);
+      .catch(() => {});
   }, []);
 
   return (
