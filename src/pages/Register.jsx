@@ -40,7 +40,7 @@ export default function Register() {
   };
 
   return (
-    <section className="section-layout w-full flex flex-col h-screen">
+    <section className="section-layout w-full flex flex-col min-h-screen">
       <form onSubmit={submit} className="space-y-4 w-96 mx-auto">
         <h1 className="title-sm flex justify-center">Enter your information</h1>
         <Input

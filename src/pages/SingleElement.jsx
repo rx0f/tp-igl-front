@@ -20,7 +20,7 @@ export default function SingleElement() {
   }, []);
 
   return (
-    <section className="section-layout grid grid-cols-3 gap-8">
+    <section className="section-layout grid grid-cols-3 gap-8 min-h-screen">
       <h2 className="title-lg col-span-3">{offer.titre}</h2>
       <div className="col-span-3 md:col-span-2">
         <img
