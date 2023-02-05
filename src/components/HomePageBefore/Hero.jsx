@@ -10,7 +10,7 @@ export default function Hero() {
         </p>
       </div>
       <img
-        src=" https://res.klook.com/image/upload/c_fill,w_720,h_500,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/ctkjmd3fsgssxztsu5aq.webp"
+        src="https://2.bp.blogspot.com/-ZAVZnl1Fti4/ULbIZJ0lwTI/AAAAAAAAD64/4nuYnCl_nOE/s1600/Kuala_Lumpur_Petronas_Twin_Towers_Malaysia.jpg"
         alt="Building"
         className="col-span-1 order-first md:order-last my-auto rounded-xl"
       />

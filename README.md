@@ -17,7 +17,7 @@ Exécutez la commande npm install pour installer toutes les dépendances nécess
 <h2>Développement local</h2>
 
 Exécutez la commande npm run dev pour lancer le serveur de développement local
-<h4>La baseURL est dans src/utils/environment</h4>
+<h3>La baseURL est dans src/utils/environment</h3>
 
 <h2>Déploiement</h2>
 Le Frontend est déployé sur : https://tp-igl-front.vercel.app/
